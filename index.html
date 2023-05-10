@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chamkaramkattil Temple Official</title>
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/component.css" rel="stylesheet" type="text/css" />
+	<!-- Custom Theme files -->
+
+	<link rel="icon" href="https://css-tricks.com/apple-touch-icon.png" sizes="any">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Scootio Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola Welcome" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--web-fonts-->
+	<link href='//fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
+	
+	<!--js-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	<link href="css/swipebox.css" rel='stylesheet' type='text/css' />
+	<!--//js-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!--/script-->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+			});
+		});
+	</script>
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+			$(".work-grid-middle a").swipebox();
+		});
+	</script>
+
+
+</head>
+<!--start-home-->
+
+<body class="cbp-spmenu-push">
+	<!--top-header-->
+	<!--bottom-->
+	<section class="button">
+		<button id="showLeftPush"><img src="images/menu-icon.png" alt=""></button>
+	</section>
+	<!-- start-search-->
+	<div class="search">
+		<div id="sb-search" class="sb-search">
+			<form>
+				<input class="sb-search-input" placeholder="Enter your search term..." type="search" id="search">
+				<input class="sb-search-submit" type="submit" value="">
+				<span class="sb-icon-search"> </span>
+			</form>
+		</div>
+	</div>
+
+	<!--font-awesome-icons-->
+	<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+		integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+		crossorigin="anonymous"></script>
+
+	<!--search-scripts-->
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
+	<script>
+		new UISearch(document.getElementById('sb-search'));
+	</script>
+	<!--//search-scripts-->
+
+	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left " id="cbp-spmenu-s1">
+		<h3>Menu</h3>
+		<a class="active scroll packagefont" href="#house">Home</a>
+		<a class="scroll packagefont" href="#about">About</a>
+		<a class="scroll" href="#service">Timings</a>
+		<a class="scroll" href="#news">News</a>
+		<a class="scroll" href="#demo">Rates</a>
+		<a class="scroll" href="#test">Announcements</a>
+		<a class="scroll" href="#gallery">Gallery</a>
+		<a class="scroll" href="#contact">Contact</a>
+	
+	</nav>
+	<div class="banner" id="house">
+		<div class="container">
+			<div class="callbacks_container">
+				<ul class="rslides callbacks callbacks1" id="slider4">
+					<li class="callbacks1_on"
+						style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
+						
+					</li>
+					<li class=""
+						style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
+						
+					</li>
+					<li class=""
+						style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out;">
+						
+					</li>
+					<li class="callbacks1_on"
+						style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out;">
+						
+					</li>
+				</ul>
+			</div>
+			<!--banner-Slider-->
+			<script src="js/responsiveslides.min.js"></script>
+			<script>
+				// You can also use "$(window).load(function() {"
+				$(function () {
+					// Slideshow 4
+					$("#slider4").responsiveSlides({
+						auto: true,
+						pager: true,
+						nav: false,
+						speed: 500,
+						namespace: "callbacks",
+						before: function () {
+							$('.events').append("<li>before event fired.</li>");
+						},
+						after: function () {
+							$('.events').append("<li>after event fired.</li>");
+						}
+					});
+
+				});
+			</script>
+		</div>
+
+
+	</div>
+	<script>
+		var menuLeft = document.getElementById('cbp-spmenu-s1'),
+			showLeftPush = document.getElementById('showLeftPush'),
+			showRightPush = document.getElementById('showRightPush'),
+			body = document.body;
+
+		showLeftPush.onclick = function () {
+			classie.toggle(this, 'active');
+			classie.toggle(body, 'cbp-spmenu-push-toright');
+			classie.toggle(menuLeft, 'cbp-spmenu-open');
+			disableOther('showLeftPush');
+		};
+
+		function disableOther(button) {
+			if (button !== 'showLeftPush') {
+				classie.toggle(showLeftPush, 'disabled');
+			}
+			if (button !== 'showRightPush') {
+				classie.toggle(showRightPush, 'disabled');
+			}
+		}
+	</script>
+	<!--start-about-->
+	<div class="about-section" id="about">
+		<div class="container">
+			<h3 class="tittle">About</h3>
+			<div class="about-top">
+				<div class="col-md-6 about-text">
+					<h4 >പടിയൂർ  ചങ്കരംകാട്ടിൽ ശ്രീഭദ്രകാളി - വിഷ്ണുമായ ക്ഷേത്രം</h4>
+					<p> കേരളത്തിലെ തൃശൂർ ജില്ലയിലെ പടിയൂർ ദേശത്തിലെ
+						 ഒരു കുടുംബ ക്ഷേത്രമാണ് ചങ്കരംകാട്ടിൽ ശ്രീഭദ്രകാളി - വിഷ്ണുമായ ക്ഷേത്രം. 
+						 കേരളത്തിൽ ആരാധിക്കപ്പെടുന്ന മഹാകാളി അല്ലെങ്കിൽ പരാശക്തിയുടെ
+						  ഒരു രൂപമായ ഭദ്രകാളി ദേവിക്കാണ് ഈ ക്ഷേത്രം സമർപ്പിച്ചിരിക്കുന്നത്.
+						    ഈ ക്ഷേത്രത്തിലെ ദേവത
+							 ദേവിയെ പ്രതിനിധീകരിക്കുന്നത് ദേവിയുടെ ഉഗ്രമായ ('ദുർഗ്ഗ') രൂപത്തിലാണ്.
+							 ശ്രീഭദ്രകാളി കൂടാതെ ശ്രീവിഷ്ണുമായയും ഈ ക്ഷേത്രത്തിലെ പ്രധാന പ്രതിഷ്ഠകളിൽ ഒന്നാണ്.</p>
+					
+					<a href="#" class="con two"><i class="glyphicon glyphicon-menu-right"></i>Read More</a>
+				</div>
+				<div class="col-md-6 about-pic">
+					<img src="images/ab.png" alt="" />
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//about-->
+	<!--start-services-->
+	<div class="service-section" id="service">
+		<div class="container">
+			<h3 class="tittle">Timings</h3>
+			<div class="service-bottom">
+				<div class="col-md-6 about-left">
+					<div class="srv-one">
+						<div class="srv-left">
+							<h4>ദർശന സമയം</h4>
+							<p>ദിവസേന വെെകീട്ട് 5 മണി മുതൽ രാത്രി 7 മണി വരെ.</p>
+						</div>
+						<div class="srv-right">
+							<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="srv-two">
+						
+						<div class="srv-right">
+							<!-- <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> -->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-6 about-left">
+					<div class="srv-one">
+						<div class="ab-left">
+							<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+						</div>
+						<div class="ab-right">
+							
+							<h4>മാസ പൂജ</h4>
+							<p>മാസത്തിലെ രണ്ടാം ഞായറാഴ്ച ദിവസം നടത്തുന്നത്.</p>
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="srv-two">
+						<div class="ab-left">
+							<!-- <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> -->
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+		</div>
+	</div>
+	<!--latest-models-->
+	<div class="top-places">
+		<div class="container">
+			<h3 class="tittle">പ്രധാന പ്രതിഷ്ഠകൾ</h3>
+			<div class="tip-main">
+				<div class="col-md-4 top-grid">
+					<img src="images/du.png" alt="image" />
+					<h4 style="font-weight: bolder;">ഭദ്രകാളി</h4>
+				
+				</div>
+				<div class="col-md-4 top-grid">
+					<img src="images/vi.png" alt="image" />
+					<h4 style="font-weight: bolder;">വിഷ്ണുമായ</h4>
+					
+				</div>
+				<div class="col-md-4 top-grid">
+					<img src="images/ha.png" alt="image" />
+					<h4 style="font-weight: bolder;">ഹനുമാൻ</h4>
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!--//about-->
+	
+	<!--news-starts-->
+	<div class="news" id="news">
+		<div class="container">
+			<h3 class="tittle">Our News</h3>
+			<div class="news-bottom">
+				<div class="news-one">
+					<div class="col-md-12 news-left">
+						<a href="#"><img src="images/n1.png" alt="" /></a>
+					</div>
+					<!-- <div class="col-md-6 news-right">
+						<a href="#">
+							<h4>Pellentesque mollis malesuada</h4>
+						</a>
+						<h5>30.08.2015</h5>
+						<p class="one">Duis bibendum pellentesque nisi eget volutpat. Nunc rhoncus ultrices
+							lectus.Aliquam eu dui quis orci ultrices eleifend ut non massa. Duis commodo, ante in
+							vulputate iaculis, libero ex fringilla dolor id laoreet augue. Maecenas dui diam,
+							pellentesque et.</p>
+					</div> -->
+					<div class="clearfix"> </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!--news-end-->
+
+	<!--test-demo-->
+	<div class="test-demo" id="demo">
+		<div class="container">
+			<h3 class="tittle">Rates</h3>
+		
+			<div class="demo-top">
+				
+				<div class="col-md-4 demo-text">
+					<div class="pre-top">
+						<div class="item-text">
+							<span class="item_price">പുഷ്പാഞ്ജലി</span>
+							<h6>10.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">ശത്രുസംഹാര പുഷ്പാഞ്ജലി</span>
+							<h6>50.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">ഗണപതിഹോമം</span>
+							<h6> 100.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">ഭഗവതിസേവ</span>
+							<h6>50.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					
+
+				</div>
+
+				<div class="col-md-4 demo-text">
+					
+					<div class="pre-top">
+						<div class="item-text">
+							<span class="item_price">കലശാഭിഷേകം</span>
+							<h6>50.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">മൃത്യുഞ്ജയം</span>
+							<h6>100.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">നെയ്യ് വിളക്ക്</span>
+							<h6> 30.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">വെറ്റിലമാല</span>
+							<h6>30.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					
+
+				</div>
+
+				<div class="col-md-4 demo-text">
+					<div class="pre-top">
+						
+						<div class="item-text">
+							<span class="item_price">സാരസ്വതം</span>
+							<h6> 30.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">നെൽപ്പറ</span>
+							<h6>100.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">ചുറ്റുവിളക്ക്</span>
+							<h6>500.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="item-text">
+							<span class="item_price">മാസപൂജ</span>
+							<h6>1500.00</h6>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					
+
+				</div>
+				
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//test-demo-->
+	<!--//testimonials-->
+	<div class="testimonials" id="test">
+		<div class="container">
+			<h3 class="tittle">Announcements</h3>
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider3">
+					<li>
+						<div class="testi-text">
+							
+							
+							<p><span> </span>അമ്മേ നാരായണ ദേവീ നാരായണ ലക്ഷ്മീ നാരായണ  ഭദ്രേ നാരായണ. </p>
+						</div>
+					</li>
+					<li>
+						<div class="testi-text">
+							
+							<p><span> </span>ക്ഷേത്ര മതിൽക്കെട്ടിനുള്ളിൽ നാമജപം മാത്രം.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 3
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!--start-gallery-->
+	<div class="work" id="gallery">
+		<!-- container -->
+		<div class="container">
+			<h3 class="tittle">Gallery</h3>
+			<div class="work-grids">
+				<div class="work-grids-top">
+					<div class="col-md-4 work-grid-left">
+						<h5></h5>
+						<p></p>
+						
+					</div>
+					<div class="col-md-4 work-grid-middle">
+						<a class="example-image-link" href="images/g1.png" data-lightbox="example-set"
+							data-title=""><img class="example-image" src="images/g1.png" alt="" /></a>
+					</div>
+					<div class="col-md-4 work-grid-left">
+						<h5></h5>
+						<p></p>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-grids-top">
+					<div class="col-md-4 work-grid-middle">
+						<a class="example-image-link" href="images/g3.png" data-lightbox="example-set"
+							data-title=""><img class="example-image" src="images/g3.png" alt="" /></a>
+					</div>
+					<div class="col-md-4 work-grid-left">
+						<h5></h5>
+						<p></p>
+						
+					</div>
+					<div class="col-md-4 work-grid-middle">
+						<a class="example-image-link" href="images/g4.png" data-lightbox="example-set"
+							data-title=""><img class="example-image" src="images/g4.png" alt="" /></a>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="work-grids-top">
+					<div class="col-md-4 work-grid-left">
+						<h5></h5>
+						<p></p>
+						
+					</div>
+					<div class="col-md-4 work-grid-middle">
+						<a class="example-image-link" href="images/g2.png" data-lightbox="example-set"
+							data-title=""><img class="example-image" src="images/g2.png" alt="" /></a>
+					</div>
+					<div class="col-md-4 work-grid-left">
+						<h5></h5>
+						<p></p>
+						
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!--contact-->
+	<div class="contact" id="contact">
+		<div class="container">
+			<h3 class="tittle">Contact</h3>
+			<div class="contact-form">
+				<div class="col-md-6 contact-grid">
+					<form>
+						<p class="your-para">Your Name:</p>
+						<input type="text" value="" onfocus="this.value='';"
+							onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Your Mail:</p>
+						<input type="text" value="" onfocus="this.value='';"
+							onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Your Message:</p>
+						<textarea cols="77" rows="6" value=" " onfocus="this.value='';"
+							onblur="if (this.value == '') {this.value = '';}"></textarea>
+						<div class="send">
+							<input type="submit" value="Send">
+							</div>
+					</form>
+				</div>
+				<div class="col-md-6 contact-in">
+					<h5> Contact Info</h5>
+					<p class="para1">മാസപൂജ മറ്റു വഴിപാടുകൾ എന്നിവ ബുക്ക് ചെയ്യുന്നതിനായി ബന്ധപ്പെടുക </p>
+					<div class="more-address">
+						<div class="address-more">
+
+							<p class="phone"><i class="glyphicon glyphicon-phone"></i> <b>9495130452, 8129479455 </b> </p>
+							<p class="mail"><i class="glyphicon glyphicon-envelope"></i><a
+									href="mailto:info@gmail.com">chamkaramkattiltemple@gmail.com</a></p>
+
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!--/footer-->
+	<div class="copy">
+		<p>&copy; 2023 Chamkaramkattil Temple. All Rights Reserved | Design by Jayaraj Jayakrishnan </p>
+	</div>
+	<!--start-smoth-scrolling-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<a href="#house" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+		</span></a>
+
+</body>
+
+</html>
