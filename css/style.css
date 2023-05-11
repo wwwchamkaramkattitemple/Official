@@ -49,14 +49,12 @@ label{
 /*--bottomner--*/
 .banner{
 	    background: url(../images/kk.png) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    /* min-height: 900px; */
-	max-width: 100%; 
-	 height: auto; 
+	 background-size: cover;
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 -ms-background-size: cover;
+	 min-height: 900px;
 	
 }
 /*--header--*/
@@ -1396,7 +1394,8 @@ text-decoration:underline;
 }
 @media (max-width:480px){
 	.banner {
-		min-height: 359px;
+		/* min-height: 359px; */
+		min-height: 259px;
 	}
 	.sb-search.sb-search-open, .no-js .sb-search {
 		width: 48%;
@@ -1532,7 +1531,8 @@ text-decoration:underline;
     height:35px;
 	}
 	.banner {
-		min-height: 274px;
+		/* min-height: 274px; */
+		min-height: 234px;
 	}
 	.banner-info {
 		margin-top: 9em;
@@ -1736,7 +1736,8 @@ text-decoration:underline;
     height:35px;
 	}
 	.banner {
-		min-height: 274px;
+		/* min-height: 274px; */
+		min-height: 220px;
 	}
 	.banner-info {
 		margin-top: 9em;
@@ -1892,7 +1893,8 @@ text-decoration:underline;
 		font-size: 1.6em;
 	}
 	.banner {
-		min-height: 245px;
+		/* min-height: 245px; */
+		min-height: 205px;
 	}
 	.banner-info {
 		margin-top: 8em;
