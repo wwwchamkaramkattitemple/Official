@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = $_POST["email"];
   $subject = $_POST["subject"];
 
-  $to = "jayaraj@mediwarehms.com"; // Replace with your email address
+  $to = "chamkaramkattiltemple@gmail.com"; // Replace with your email address
   $subject = "Form Submission from $name";
   $headers = "From: $email";
 
