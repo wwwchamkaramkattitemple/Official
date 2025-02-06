@@ -1,20 +1,30 @@
-/**
-* Template Name: Delicious
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Poppins", sans-serif;
   color: #a39a9a;
 }
 
+::-webkit-scrollbar {
+  width: 5px; 
+}
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fdc400; 
+}
+
+.scrollbar {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #f1f1f1; 
+}
 
 a {
   text-decoration: none;
